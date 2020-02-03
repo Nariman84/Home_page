@@ -1,0 +1,41 @@
+@import '../base/fonts';
+@import '../base/colors';
+
+.wrap-categories {
+	padding: 50px 0;
+
+	.category-item {
+		padding-bottom: 70px;
+
+		.category_title {
+			margin-bottom: 20px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 1.4;
+			color: $fontColorLightGreen;
+		}
+	}
+
+	.subcategory_list {
+		list-style: none;
+
+		.subcategory__link {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 2;
+		}
+
+		.btn_all-items {
+			@extend .subcategory__link;
+			color: $fontColorLightestGray;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.wrap-categories {
+		display: none;
+	}
+}

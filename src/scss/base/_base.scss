@@ -1,0 +1,36 @@
+.default-link {
+	@include link;
+}
+
+.btn-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@extend .default-link;
+}
+
+.btn-link__orange {
+	@include btn-link-orange;
+}
+
+.btn_download {
+	@include btn-size(144px, 48px);
+}
+
+.screen-desktop {
+	display: initial;
+}
+
+.screen-mobile {
+	display: none;
+}
+
+@media (max-width: 575px) {
+	.screen-desktop {
+		display: none;
+	}
+
+	.screen-mobile {
+		display: initial;
+	}
+}

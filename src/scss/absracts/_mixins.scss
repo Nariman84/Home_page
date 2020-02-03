@@ -1,0 +1,94 @@
+@import '../base/colors';
+
+@mixin block-title {
+	text-align: center;
+	line-height: 60px;
+	font-style: normal;
+	font-size: 48px;
+	font-weight: 500;
+	color: $fontColorBlack;
+
+	@media (max-width: 767px) {
+		line-height: 44px;
+		font-size: 32px;
+	}
+}
+
+@mixin btn(
+	$btnBgColor: $colorLightGreen,
+	$btnBgHover: $hoverColorLightGreen,
+	$btnColor: $fontColorWhite
+) {
+	background: $btnBgColor;
+	color: $btnColor;
+
+	&:hover {
+		background: $btnBgHover;
+	}
+}
+
+@mixin btn-size($width, $height, $bRadius: 6px) {
+	width: $width;
+	height: $height;
+	border-radius: $bRadius;
+}
+
+@mixin link($linkColor: $fontColorBlack, $hover: $fontColorLightGreen) {
+	text-decoration: none;
+	color: $linkColor;
+
+	&:hover {
+		color: $hover;
+	}
+}
+
+@mixin btn-link-outline-color($link, $hover, $bgColor: #fff) {
+	border: 1px solid $link;
+	background: $bgColor;
+	color: $link;
+
+	&:hover {
+		border-color: $hover;
+		background: $bgColor;
+		color: $hover;
+	}
+}
+
+@mixin btn-link-color($bgColor, $hover) {
+	border: 1px solid $bgColor;
+	background: $bgColor;
+	color: $fontColorWhite;
+
+	&:hover {
+		border-color: $hover;
+		background: $hover;
+		color: $fontColorWhite;
+	}
+}
+
+@mixin btn-link-orange {
+	border: 1px solid $colorOrange;
+	background: $colorOrange;
+	color: $fontColorWhite;
+
+	&:hover {
+		border-color: $hoverColorOrange;
+		background: $hoverColorOrange;
+		color: $fontColorWhite;
+	}
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+		@content;
+	}
+    &:-moz-placeholder {
+		@content;
+	}
+    &::-moz-placeholder {
+		@content;
+	}
+    &:-ms-input-placeholder {
+		@content;
+	}
+}

@@ -124,7 +124,9 @@
 
 @media (max-width: 575px) {
 	.container {
-		max-width: 360px;
+		max-width: 375px;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 
 	.col-3,

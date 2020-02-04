@@ -6,6 +6,7 @@
 }
 
 .logo {
+    margin-left: -15px;
 	display: inline-block;
 	width: 154px;
     line-height: 80px;
@@ -16,7 +17,7 @@
 }
 
 .nav {
-    margin-left: 80px;
+    margin-left: 86px;
     display: inline-block;
     height: 80px;
     line-height: 80px;
@@ -35,14 +36,16 @@
         }
 
         &_item:not(:first-child) {
-            margin-left: 36px;
+            margin-left: 37px;
         }
     }
 }
 
 .auth-buttons {
+    margin-right: -15px;
     height: 80px;
     float: right;
+    font-size: 14px;
 
     .wrap-buttons {
         height: 100%;
@@ -61,6 +64,7 @@
 }
 
 .hamburger {
+    margin-right: 6px;
     display: none;
     height: 70px;
     float: right;
@@ -69,7 +73,7 @@
     .hamburger-icon {
         position: relative;
         display: inline-block;
-        width: 25px;
+        width: 27px;
         height: 2px;
         border-radius: 2px;
         vertical-align: middle;
@@ -79,7 +83,7 @@
         &::after {
             content: '';
             position: absolute;
-            width: 25px;
+            width: 27px;
             height: 2px;
             border-radius: 2px;
             background: $colorBlack;
@@ -95,12 +99,27 @@
     }
 }
 
+@media (min-width: 1160px) {
+    .logo {
+        margin-left: -15px;
+    }
+
+    .nav {
+        margin-left: 86px;
+
+        .menu_item:not(:first-child) {
+            margin-left: 37px;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .header {
         height: 70px;
     }
 
     .logo {
+        margin-left: 6px;
         line-height: 70px;
     }
 

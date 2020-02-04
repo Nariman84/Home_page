@@ -777,6 +777,11 @@
 	.wrap-blog {
 		padding-top: 7px;
 
+		.container {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
 		.blog_cards {
 			padding-bottom: 46px;
 		}

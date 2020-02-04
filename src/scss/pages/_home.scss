@@ -3,7 +3,7 @@
 
 .wrap-banner {
 	height: 620px;
-	background: #ffa048 url(../img/home/banner_background.svg) center / cover;
+	background: #ffa048 url(../img/home/banner_background.png) center / cover;
 	color: $fontColorWhite;
 
 
@@ -1115,6 +1115,8 @@
 
 @media (max-width: 575px) {
 	.wrap-banner {
+		background: #ffa048 url(../img/home/banner_background_mobile.png) center / cover;
+
 		.offer_formbox {
 			max-width: 500px;
 		}
@@ -1169,6 +1171,15 @@
 		padding-top: 86px;
 		padding-bottom: 45px;
 
+		.container {
+			max-width: 375px;
+		}
+
+		.hiw .container {
+			max-width: 575px;
+		}
+
+
 		.hiw_step_desc {
 			padding-left: 25px;
 
@@ -1198,25 +1209,17 @@
 
 			&:first-child {
 				margin-bottom: 40px;
-
-				.hiw_step_pic {
-					margin-top: -1px;
-				}
 			}
 
 			&:nth-child(2) {
-				margin-bottom: 20px;
+				margin-bottom: 28px;
 
 				.hiw_step_pic {
-					margin-top: -1px;
-
+					margin-left: 2px;
 				}
 			}
 
 			&:last-child {
-				.hiw_step_pic {
-					margin-top: 5px;
-				}
 
 				.hiw_step_desc {
 					.hiw_step__text {
@@ -1318,6 +1321,7 @@
 		}
 
 		.stream-tasks .wrap_helpers .helper_item {
+			width: 300px;
 			height: 340px;
 		}
 

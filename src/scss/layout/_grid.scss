@@ -1,14 +1,14 @@
 .container {
-	max-width: 1160px;
+	max-width: 1180px;
 	margin: auto;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -15px;
+	margin: 0 -10px;
 }
 
 .col-1,
@@ -25,7 +25,7 @@
 .col-12 {
 	position: relative;
 	width: 100%;
-	padding: 0 15px;
+	padding: 0 10px;
 }
 
 .col-1 {
@@ -88,7 +88,59 @@
 	max-width: 100%;
 }
 
-@media (max-width: 1160px) {
+.offset-0 {
+	margin-left: 0;
+}
+
+.offset-1 {
+	margin-left: 8.33%;
+}
+
+.offset-2 {
+	margin-left: 16.66%;
+}
+
+.offset-3 {
+	margin-left: 25%;
+}
+
+.offset-4 {
+	margin-left: 33.33%;
+}
+
+.offset-5 {
+	margin-left: 41.66%;
+}
+
+.offset-6 {
+	margin-left: 50%;
+}
+
+.offset-7 {
+	margin-left: 58.33%;
+}
+
+.offset-8 {
+	margin-left: 66.66%;
+}
+
+.offset-9 {
+	margin-left: 75%;
+}
+
+.offset-10 {
+	margin-left: 83.33%;
+}
+
+.offset-11 {
+	margin-left: 91.67%;
+}
+
+.offset-12 {
+	margin-left: 100%;
+}
+
+@media (max-width: 1159px) {
 	.container {
 		max-width: 991px;
 	}

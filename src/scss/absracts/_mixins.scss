@@ -1,5 +1,14 @@
 @import '../base/colors';
 
+@mixin main-page-title($color: $fontColorWhite) {
+	text-align: center;
+	line-height: 96px;
+	font-style: normal;
+	font-size: 74px;
+	font-weight: 500;
+	color: $color;
+}
+
 @mixin block-title {
 	text-align: center;
 	line-height: 60px;
@@ -7,13 +16,9 @@
 	font-size: 48px;
 	font-weight: 500;
 	color: $fontColorBlack;
-
-	@media (max-width: 767px) {
-		line-height: 44px;
-		font-size: 32px;
-	}
 }
 
+// цвет кнопки
 @mixin btn(
 	$btnBgColor: $colorLightGreen,
 	$btnBgHover: $hoverColorLightGreen,
@@ -21,51 +26,44 @@
 ) {
 	background: $btnBgColor;
 	color: $btnColor;
+	transition: all 0.2s;
 
 	&:hover {
 		background: $btnBgHover;
 	}
 }
 
+// размеры кнопок
 @mixin btn-size($width, $height, $bRadius: 6px) {
 	width: $width;
 	height: $height;
 	border-radius: $bRadius;
 }
 
+// цвет ссылок
 @mixin link($linkColor: $fontColorBlack, $hover: $fontColorLightGreen) {
 	text-decoration: none;
 	color: $linkColor;
+	transition: all 0.2s;
 
 	&:hover {
 		color: $hover;
 	}
 }
 
-@mixin btn-link-outline-color($link, $hover, $bgColor: #fff) {
+// цвет контурных кнопок (ссылок)
+@mixin btn-link-outline-color($link, $hover) {
 	border: 1px solid $link;
-	background: $bgColor;
+	background: $fontColorWhite;
 	color: $link;
 
 	&:hover {
 		border-color: $hover;
-		background: $bgColor;
 		color: $hover;
 	}
 }
 
-@mixin btn-link-color($bgColor, $hover) {
-	border: 1px solid $bgColor;
-	background: $bgColor;
-	color: $fontColorWhite;
-
-	&:hover {
-		border-color: $hover;
-		background: $hover;
-		color: $fontColorWhite;
-	}
-}
-
+// миксин для оранжевой кнопки
 @mixin btn-link-orange {
 	border: 1px solid $colorOrange;
 	background: $colorOrange;
@@ -92,3 +90,17 @@
 		@content;
 	}
 }
+
+
+// цвет контурных кнопок
+// @mixin btn-link-color($bgColor, $hover) {
+// 	border: 1px solid $bgColor;
+// 	background: $bgColor;
+// 	color: $fontColorWhite;
+
+// 	&:hover {
+// 		border-color: $hover;
+// 		background: $hover;
+// 		color: $fontColorWhite;
+// 	}
+// }

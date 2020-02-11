@@ -41,7 +41,9 @@ var path = {
 
 var config = {
     server: {
-        baseDir: './public'
+        baseDir: './public',
+        index: 'home_page.html'
+        // index: 'executor_promo.html'
     },
     port: 3000
 };
